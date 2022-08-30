@@ -1,0 +1,34 @@
+-- changelog_V1_setup_tab1.xml
+
+<?xml version="1.0" encoding="UTF-8"?> 
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet author="tim" id="01_emp_seq">
+      <sqlFile dbms="oracle"
+               endDelimiter=";"
+               path="C:\Kalyan\Projects\Oracle\gltraining\OracleDB\GIT\scripts\emp_seq.sql"
+               relativeToChangelogFile="true"
+               splitStatements="true"
+               stripComments="false"/>
+    </changeSet>
+    <changeSet author="tim" id="02_emp">
+      <sqlFile dbms="oracle"
+               endDelimiter=";"
+               path="C:\Kalyan\Projects\Oracle\gltraining\OracleDB\GIT\scripts\emp.sql"
+               relativeToChangelogFile="true"
+               splitStatements="true"
+               stripComments="false"/>
+    </changeSet>
+    <changeSet author="tim" id="03_get_emp_count" runOnChange="true">
+      <sqlFile dbms="oracle"
+               endDelimiter=";"
+               path="C:\Kalyan\Projects\Oracle\gltraining\OracleDB\GIT\scripts\f_fetch_emp_data.sql"
+               relativeToChangelogFile="true"
+               splitStatements="false"
+               stripComments="false"/>
+    </changeSet>
+</databaseChangeLog>
