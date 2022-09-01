@@ -20,8 +20,4 @@
                splitStatements="true"
                stripComments="false"/>
     </changeSet>
-
-    
-
-
 </databaseChangeLog>
