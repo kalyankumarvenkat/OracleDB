@@ -12,4 +12,12 @@
                splitStatements="true"
                stripComments="false"/>
     </changeSet>
+    <changeSet author="kalyan" id="02_Greet_Fun">
+      <sqlFile dbms="oracle"
+               endDelimiter=";"
+               path=".\scripts\Greet.sql"
+               relativeToChangelogFile="true"
+               splitStatements="false"
+               stripComments="false"/>
+    </changeSet>
 </databaseChangeLog>
