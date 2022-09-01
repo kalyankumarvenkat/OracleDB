@@ -7,7 +7,7 @@
     <changeSet author="kalyan" id="01_dept_seq">
       <sqlFile dbms="oracle"
                endDelimiter=";"
-               path="dept_seq.sql"
+               path=".\scripts\dept_seq.sql"
                relativeToChangelogFile="true"
                splitStatements="true"
                stripComments="false"/>
@@ -15,9 +15,20 @@
     <changeSet author="kalyan" id="02_dept">
       <sqlFile dbms="oracle"
                endDelimiter=";"
-               path="dept.sql"
+               path=".\scripts\dept.sql"
                relativeToChangelogFile="true"
                splitStatements="true"
                stripComments="false"/>
     </changeSet>
+
+    <changeSet author="kalyan" id="03_empTable">
+      <sqlFile dbms="oracle"
+               endDelimiter=";"
+               path=".\scripts\emp_table.sql"
+               relativeToChangelogFile="true"
+               splitStatements="true"
+               stripComments="false"/>
+    </changeSet>
+
+
 </databaseChangeLog>
