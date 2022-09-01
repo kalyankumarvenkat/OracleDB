@@ -4,18 +4,10 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
-    <changeSet author="kalyan" id="01_emp_seq">
+    <changeSet author="kalyan" id="01_Bank_Info">
       <sqlFile dbms="oracle"
                endDelimiter=";"
-               path=".\scripts\emp_seq.sql"
-               relativeToChangelogFile="true"
-               splitStatements="true"
-               stripComments="false"/>
-    </changeSet>
-    <changeSet author="kalyan" id="02_emp">
-      <sqlFile dbms="oracle"
-               endDelimiter=";"
-               path=".\scripts\emp_table.sql"
+               path=".\scripts\Bank_Info.sql"
                relativeToChangelogFile="true"
                splitStatements="true"
                stripComments="false"/>
