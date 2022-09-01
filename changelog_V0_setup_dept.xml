@@ -21,14 +21,7 @@
                stripComments="false"/>
     </changeSet>
 
-    <changeSet author="kalyan" id="03_empTable">
-      <sqlFile dbms="oracle"
-               endDelimiter=";"
-               path=".\scripts\emp_table.sql"
-               relativeToChangelogFile="true"
-               splitStatements="true"
-               stripComments="false"/>
-    </changeSet>
+    
 
 
 </databaseChangeLog>
